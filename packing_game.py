@@ -1,3 +1,6 @@
+### where is the interacticity? how to I use the funcitons?
+
+
 # the main problem in this soltution is to try the compistion and to know when to use it.
 
 category = {
@@ -59,6 +62,7 @@ class Colored(Item):
 # solution compistion
 class Charger(Item):
     def __init__(self, name, weight, category, color, price, size, brand):
+        ### interesting implementation!
         p1 = Priced(name, weight, category, price)
         p2 = Colored(name, weight, category, color)
         p3 = Electronics(name, weight, category, brand, feature="None")
@@ -73,6 +77,7 @@ class Bag:
     def __init__(self):
         self.items = []
         self.weight = 0
+        ### why private?
         self.__maxItmesNum = 6
         self.__maxWeight = 80
 
